@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="Swr-j5-XwM">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="90" id="Swr-j5-XwM" customClass="TaskTableViewCell" customModule="ToDoList" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Swr-j5-XwM" id="7B5-Bl-rAS">
@@ -44,7 +44,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Euh-MZ-e2P">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Euh-MZ-e2P" userLabel="Category Color Bar View">
                                             <rect key="frame" x="87" y="8.5" width="4" height="73"/>
                                             <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         </view>
@@ -74,6 +74,13 @@
                                         <constraint firstItem="TH9-SA-Yq2" firstAttribute="leading" secondItem="fgQ-uG-uGj" secondAttribute="leading" id="pr9-d3-JGc"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categoryColorBarView" destination="Euh-MZ-e2P" id="5yH-6q-f3o"/>
+                                    <outlet property="categoryNameLabel" destination="TH9-SA-Yq2" id="KRu-xA-Wk8"/>
+                                    <outlet property="dateLabel" destination="byT-RR-5aU" id="mM7-ra-Tic"/>
+                                    <outlet property="hourLabel" destination="ZZA-FT-h1k" id="sXe-64-dXa"/>
+                                    <outlet property="taskDescriptionLabel" destination="fgQ-uG-uGj" id="Pk4-hl-RSc"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
