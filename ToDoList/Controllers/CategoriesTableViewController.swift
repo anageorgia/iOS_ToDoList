@@ -8,6 +8,10 @@
 import UIKit
 
 class CategoriesTableViewController: UITableViewController {
+    
+    let categories = CategoryRepository.getCategories()
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,11 +26,14 @@ class CategoriesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return categories.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChooseCategoryCell", for: indexPath)
+        let category = categories[indexPath.row]
+        cell.textLabel?.text = category.name
+        
         return cell
     }
 }
