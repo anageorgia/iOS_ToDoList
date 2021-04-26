@@ -7,23 +7,20 @@
 
 import UIKit
 
-let work = Category(name: "Work", color: UIColor.green)
-let personal = Category(name: "Personal", color: UIColor.blue)
-let tech = Category(name: "Tech", color: UIColor.systemPink)
-
-
-let tasks: [Task] = [
-    Task(name: "Create presentation for tomorrow", date: Date(), category: work),
-    Task(name: "Call Monica about the broken dishes", date: Date(), category: personal),
-    Task(name: "Ask Chandler about the new computer", date: Date(), category: tech)
-]
-
 class TasksTableViewController: UITableViewController {
     
     private var dateFormatter: DateFormatter = DateFormatter()
-        
+
+    private var tasks: [Task] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        self.tasks = TaskRepository.instance.getTasks()
+        self.tableView.reloadData()
     }
     
     // returning as many elements there are in my array of tasks
