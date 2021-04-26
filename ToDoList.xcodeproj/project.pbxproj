@@ -10,6 +10,7 @@
 		5AA32B0B263647DC00EB9C93 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA32B0A263647DC00EB9C93 /* CreateTaskViewController.swift */; };
 		5AA32B22263694E500EB9C93 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA32B21263694E500EB9C93 /* CategoriesTableViewController.swift */; };
 		5AA32B282636960500EB9C93 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA32B272636960500EB9C93 /* CategoryRepository.swift */; };
+		5AA32B2D2636A0E300EB9C93 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA32B2C2636A0E300EB9C93 /* TaskRepository.swift */; };
 		5AB24EE22630DF0A0046B00D /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB24EE02630DF0A0046B00D /* TasksTableViewController.swift */; };
 		5AB24EEF2630FAF60046B00D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB24EEE2630FAF60046B00D /* Task.swift */; };
 		5AB24EF42630FBB70046B00D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB24EF32630FBB70046B00D /* Category.swift */; };
@@ -47,6 +48,7 @@
 		5AA32B0A263647DC00EB9C93 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 		5AA32B21263694E500EB9C93 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
 		5AA32B272636960500EB9C93 /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
+		5AA32B2C2636A0E300EB9C93 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
 		5AB24EE02630DF0A0046B00D /* TasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
 		5AB24EEE2630FAF60046B00D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		5AB24EF32630FBB70046B00D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				5AA32B272636960500EB9C93 /* CategoryRepository.swift */,
+				5AA32B2C2636A0E300EB9C93 /* TaskRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				5AB24F44263615040046B00D /* DateTimeTableViewCell.swift in Sources */,
 				5AB24EEF2630FAF60046B00D /* Task.swift in Sources */,
 				5AB24EE22630DF0A0046B00D /* TasksTableViewController.swift in Sources */,
+				5AA32B2D2636A0E300EB9C93 /* TaskRepository.swift in Sources */,
 				5AA32B282636960500EB9C93 /* CategoryRepository.swift in Sources */,
 				5AFEE5C4262FAE7000BCDE0D /* ToDoList.xcdatamodeld in Sources */,
 				5AB24EF42630FBB70046B00D /* Category.swift in Sources */,
