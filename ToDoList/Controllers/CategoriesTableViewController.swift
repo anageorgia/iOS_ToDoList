@@ -11,7 +11,7 @@ class CategoriesTableViewController: UITableViewController {
     
     let categories = CategoryRepository.getCategories()
     
-    
+    var chosenCategory : ((Category) -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,5 +35,14 @@ class CategoriesTableViewController: UITableViewController {
         cell.textLabel?.text = category.name
         
         return cell
+    }
+    
+    // selecting categor at Categories TableView and returning the category chosen to the CreateTask view
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = categories[indexPath.row]
+        self.chosenCategory!(category)
+        
+        // popViewControllers = responsible for returning to the previous view
+        self.navigationController?.popViewController(animated: true)
     }
 }
